@@ -41,4 +41,9 @@ class SessionHistory implements History
     {
         return $_SESSION[static::$sessionKey];
     }
+
+    public function clearHistory(): void
+    {
+        session_destroy();
+    }
 }

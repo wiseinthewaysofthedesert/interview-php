@@ -1,11 +1,12 @@
 <?php declare(strict_types=1);
 
 
-namespace Money;
+namespace Money\History;
 
-use Money\History\HistoricConversion;
+use Money\History;
+use Money\Money;
 
-/** have the candidate implement this */
+/** written by candidate **/
 class DbHistory implements History
 {
     public function saveConversion(Money $from, Money $to): void
@@ -18,5 +19,9 @@ class DbHistory implements History
     public function getHistory(): array
     {
         return [];
+    }
+
+    public function clearHistory(): void
+    {
     }
 }

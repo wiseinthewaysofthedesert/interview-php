@@ -14,4 +14,6 @@ interface History
      * @return HistoricConversion[]
      */
     public function getHistory(): array;
+
+    public function clearHistory(): void;
 }

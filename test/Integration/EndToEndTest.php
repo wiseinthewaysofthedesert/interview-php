@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Test\Unit;
+namespace Test\Integration;
 
 use Money\Converter;
 use Money\Currencies\SupportedCurrencies;

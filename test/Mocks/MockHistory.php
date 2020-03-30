@@ -15,4 +15,8 @@ class MockHistory implements History
     {
         return [];
     }
+
+    public function clearHistory(): void
+    {
+    }
 }
