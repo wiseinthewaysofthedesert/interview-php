@@ -36,6 +36,5 @@ Make GET requests to:
 ## MYSQL Details
 - By default a Docker container running MYSQL has been created to allow creation of a database as part of the exercise. 
 - To open a connection to MYSQL you can use these details:
-- User: test
-- Password: password
+- 'User: test & Password: password'
 
