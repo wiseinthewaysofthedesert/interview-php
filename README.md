@@ -12,9 +12,9 @@ Requirements:
 
 ## Run
 
--Run 'docker-compose build'
--Then run 'docker-compose up'
--The web app should not be running in a docker container!
+- Run 'docker-compose build'
+- Then run 'docker-compose up'
+- The web app should not be running in a docker container!
 
 ## Server side rendered frontend
 Navigate to
@@ -23,26 +23,19 @@ Navigate to
 ## API
 Use these addresses for the various API calls you make.
 
-Make POST requests as follows:
+Make POST requests to:
 - `POST http://localhost:8082/api/converter.php`
-With the details:
+- Example details:
 ```
     POST ?from=EUR&to=YEN&amount=10.22
+```
+Make GET requests to:
+- `GET http://localhost:8082/api/history.php` (returns json)
+- `GET http://localhost:8082/api/history.php?clear` (clear history, 200 OK)
 
-    returns json
-```
-Make GET requests as follows:
-- `GET http://localhost:8082/api/history.php`
-```
-returns json with history
-```
-- `GET http://localhost:8082/api/history.php?clear`
-```
-clears history, 200 OK
-```
 ## MYSQL Details
-By default a Docker container running MYSQL has been created to allow creation of a database as part of the exercise. 
-To open a connection to MYSQL you can use these details:
-'User: test'
-'Password: password'
+- By default a Docker container running MYSQL has been created to allow creation of a database as part of the exercise. 
+- To open a connection to MYSQL you can use these details:
+- User: test
+- Password: password
 
