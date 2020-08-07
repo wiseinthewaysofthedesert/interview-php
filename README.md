@@ -41,7 +41,5 @@ Make GET requests to:
 
 ## API
 ```
-curl -XPOST https://igfcc7aebk.execute-api.sa-east-1.amazonaws.com/default/money-conversion-interview-exercise-api \
-    -H"Content-Type: application/json" \
-    --data-binary '{"from": "EUR", "to": "USD"}'
+curl -XPOST https://igfcc7aebk.execute-api.sa-east-1.amazonaws.com/default/money-conversion-interview-exercise-api -H "Content-Type: application/json" --data-binary '{"from": "EUR", "to": "USD"}'
 ```
