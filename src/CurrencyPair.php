@@ -3,7 +3,6 @@
 
 namespace Money;
 
-
 use DateTime;
 
 class CurrencyPair
